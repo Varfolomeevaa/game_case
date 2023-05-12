@@ -3,7 +3,7 @@ Group:
 Varfolomeeva Viktoria
 Sineokaya Anastasia
 """
-def library():
+
 
 from time import sleep
 import RU_LOCAL as RU
