@@ -8,9 +8,9 @@ from time import sleep
 import RU_LOCAL as ru
 import random
 
-
 k = 0
 b = []
+print(b)
 c = ''
 while k != 4:
     if 'сходить в библиотеку' in b:
