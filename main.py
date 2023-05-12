@@ -9,7 +9,7 @@ import RU_LOCAL as ru
 import random
 k = 0
 b = []
-print(b)
+print(a)
 c = ''
 while k != 4:
     if 'сходить в библиотеку' in b:
