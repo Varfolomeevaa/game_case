@@ -1,7 +1,7 @@
 """
 Group:
-Varfolomeeva Viktoria
-Sineokaya Anastasia
+Varfolomeeva Viktoria okokokokok
+Sineokaya Anastasia lalalalalalalaa
 """
 
 from time import sleep
