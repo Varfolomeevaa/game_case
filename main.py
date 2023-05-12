@@ -21,7 +21,22 @@ class color:
    UNDERLINE = '\033[4m'
    END = '\033[0m'
 
-print(color.BOLD + RU.phrase1)
+print(color.BOLD + RU.phrase_1)
+sleep(1)
+print(color.BOLD + RU.phrase_2)
+sleep(1)
+print(color.BOLD + RU.phrase_3)
+sleep(1)
+print(color.BOLD + RU.phrase_4)
+sleep(1)
+print(color.BOLD + RU.phrase_5)
+sleep(1)
+print(color.BOLD + RU.phrase_6)
+sleep(4)
+print(color.BOLD + RU.phrase_7)
+sleep(4)
+print(color.BOLD + RU.phrase_8)
+sleep(4)
 
 k = 0
 b = []
