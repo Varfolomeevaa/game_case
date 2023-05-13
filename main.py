@@ -195,8 +195,20 @@ def call():
    print(color.BOLD + RU.call_9)
 
 def evid():
-   print(color.BOLD + RU.evid)
-   print(*evidence, sep = ';')
+    global score
+    print(color.BOLD + RU.evid_1)
+    print(*evidence, sep = ';')
+    sleep(2)
+    print(color.BOLD + RU.evid_2)
+    if score > ??:
+        print(color.BOLD + RU.evid_3)
+    else:
+        print(color.BOLD + RU.evid_4)
+
+def examination():
+
+
+
 
 def cinema():
 
