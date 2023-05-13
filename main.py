@@ -200,7 +200,7 @@ def evid():
     print(*evidence, sep = ';')
     sleep(2)
     print(color.BOLD + RU.evid_2)
-    if score > ??:
+    if score > ???:
         print(color.BOLD + RU.evid_3)
     else:
         print(color.BOLD + RU.evid_4)
