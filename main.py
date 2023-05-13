@@ -194,6 +194,10 @@ def call():
    sleep(2)
    print(color.BOLD + RU.call_9)
 
+def evid():
+   print(color.BOLD + RU.evid)
+   print(*evidence, sep = ';')
+
 def cinema():
 
     print(color.BOLD + RU.cinema_1)
