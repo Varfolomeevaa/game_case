@@ -25,21 +25,26 @@ def library():
     global score
     flag = 0
     print(color.BOLD + RU.library_1)
+    print('')
     sleep(1)
     print(color.BOLD + RU.library_2)
     sleep(1)
     print(color.BOLD + RU.library_3)
     sleep(1)
+    print('')
     print(color.BOLD + RU.library_4)
     print('')
     sleep(1)
     ans_1 = int(input(color.BOLD + RU.library_q))
+    print('')
     if ans_1 == 1:
         print(color.BOLD + RU.library_q_1)
         sleep(1)
         print(color.BOLD + RU.library_a_1)
         sleep(1)
+        print('')
         ans_2 = int(input(color.BOLD + RU.library_q_3))
+        print('')
         if ans_2 == 1:
             print(color.BOLD + RU.library_q_2)
             sleep(1)
@@ -49,7 +54,9 @@ def library():
             if rand == 1:
                 print(color.BOLD + RU.library_random_1)
                 sleep(1)
+                print('')
                 print(color.BOLD + RU.library_random_2)
+                print('')
                 sleep(1)
                 print(color.BOLD + RU.library_random_3)
                 flag = 1
@@ -62,12 +69,16 @@ def library():
         if rand == 1:
             print(color.BOLD + RU.library_random_1)
             sleep(1)
+            print('')
             print(color.BOLD + RU.library_random_2)
+            print('')
             sleep(1)
             print(color.BOLD + RU.library_random_3)
             flag = 1
         print(color.BOLD + RU.library_a_2_2)
+        print('')
         ans_2 = int(input(color.BOLD + RU.library_q_3))
+        print('')
         if ans_2 == 1:
             print(color.BOLD + RU.library_q_1)
             sleep(1)
@@ -76,62 +87,89 @@ def library():
     sleep(1)
     print(color.BOLD + RU.library_7)
     sleep(1)
+    print('')
+    print(color.BOLD + RU.library_8)
     if flag == 1:
         score += 10
 
 
 def pharmacy():
-    global score
-    flag = 0
-    print(color.BOLD + RU.pharmacy_1)
-    sleep(2)
-    print(color.BOLD + RU.pharmacy_2)
-    sleep(2)
-    print(color.BOLD + RU.pharmacy_3)
-    sleep(2)
-    print(color.BOLD + RU.pharmacy_4)
-    sleep(2)
-    ans_1 = int(input(color.BOLD + RU.pharmacy_q_1_1))
-    if ans_1 == 1:
-        print(color.BOLD + RU.pharmacy_q_1)
-        sleep(2)
-        print(color.BOLD + RU.pharmacy_a_1)
-        sleep(2)
-        ans_2 = int(input(color.BOLD + RU.pharmacy_q_1_2))
-        if ans_2 == 1:
-            print(color.BOLD + RU.pharmacy_q_2)
-            sleep(2)
-            print(color.BOLD + RU.pharmacy_a_2)
-        elif ans_2 == 2:
+   global score
+   flag = 0
+   print(color.BOLD + RU.pharmacy_1)
+   print('')
+   sleep(2)
+   print(color.BOLD + RU.pharmacy_2)
+   sleep(2)
+   print(color.BOLD + RU.pharmacy_3)
+   sleep(2)
+   print(color.BOLD + RU.pharmacy_4)
+   sleep(2)
+   print('')
+   ans_1 = int(input(color.BOLD + RU.pharmacy_q_1_1))
+   print('')
+   if ans_1 == 1:
+      print(color.BOLD + RU.pharmacy_q_1)
+      sleep(2)
+      print(color.BOLD + RU.pharmacy_a_1)
+      sleep(2)
+      print('')
+      ans_2 = int(input(color.BOLD + RU.pharmacy_q_1_2))
+      print('')
+      if ans_2 == 1:
+         print(color.BOLD + RU.pharmacy_q_2)
+         sleep(2)
+         print(color.BOLD + RU.pharmacy_a_2)
+      elif ans_2 == 2:
+         flag = 1
+         print(color.BOLD + RU.pharmacy_q_2_1)
+         sleep(2)
+         print(color.BOLD + RU.pharmacy_q_2_2)
+         sleep(2)
+         print(color.BOLD + RU.pharmacy_a_3)
+   elif ans_1 == 2:
+      print(color.BOLD + RU.pharmacy_q_2)
+      sleep(2)
+      print(color.BOLD + RU.pharmacy_a_2)
+      print('')
+      ans_2 = int(input(color.BOLD + RU.pharmacy_q_3))
+      print('')
+      if ans_2 == 1:
+         print(color.BOLD + RU.pharmacy_q_1)
+         sleep(2)
+         print(color.BOLD + RU.pharmacy_a_1)
+         sleep(2)
+         print('')
+         ans_3 = int(input(color.BOLD + RU.pharmacy_q_4))
+         print('')
+         if ans_3 == 1:
             flag = 1
             print(color.BOLD + RU.pharmacy_q_2_1)
             sleep(2)
             print(color.BOLD + RU.pharmacy_q_2_2)
             sleep(2)
             print(color.BOLD + RU.pharmacy_a_3)
-    elif ans_1 == 2:
-        print(color.BOLD + RU.pharmacy_q_2)
-        sleep(2)
-        print(color.BOLD + RU.pharmacy_a_2)
-        ans_2 = int(input(color.BOLD + RU.pharmacy_q_3))
-        if ans_2 == 1:
-            print(color.BOLD + RU.pharmacy_q_1)
-            sleep(2)
-            print(color.BOLD + RU.pharmacy_a_1)
-            sleep(2)
-            ans_3 = int(input(color.BOLD + RU.pharmacy_q_4))
-            if ans_3 == 1:
-                flag = 1
-                print(color.BOLD + RU.pharmacy_q_2_1)
-                sleep(2)
-                print(color.BOLD + RU.pharmacy_q_2_2)
-                sleep(2)
-                print(color.BOLD + RU.pharmacy_a_3)
-    print(color.BOLD + RU.pharmacy_5)
-    sleep(2)
-    print(color.BOLD + RU.pharmacy_6)
-    if flag == 1:
-        score += 10
+   print(color.BOLD + RU.pharmacy_5)
+   sleep(2)
+   print(color.BOLD + RU.pharmacy_6)
+   if flag == 1:
+      score += 10
+   print('')
+   print(color.BOLD + RU.pharmacy_7)
+
+def talk():
+   print(color.BOLD + RU.talk_1)
+   sleep(2)
+   print('')
+   print(color.BOLD + RU.talk_2)
+   sleep(2)
+   print(color.BOLD + RU.talk_3)
+   sleep(2)
+   print(color.BOLD + RU.talk_4)
+   sleep(2)
+   print(color.BOLD + RU.talk_5)
+   sleep(2)
+   print(color.BOLD + RU.talk_6)
 
 def cinema():
     print(color.BOLD + RU.cinema_1)
