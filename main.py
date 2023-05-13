@@ -76,10 +76,81 @@ def library():
         score += 10
     print(color.BOLD + RU.library_9, score)
 
-library()
 
+def university():
+   global score
+   print(color.BOLD + RU.university_1)
+   sleep(2)
+   print(color.BOLD + RU.university_2)
+   sleep(2)
+   ans1 = int(input(color.BOLD + RU.university_3))
+   print(color.BOLD + RU.university_4)
+   sleep(2)
+   print(color.BOLD + RU.university_5)
+   sleep(2)
+   print(color.BOLD + RU.university_6)
+   ans2 = int(input(color.BOLD + RU.university_3))
+   if ans2 == 1:
+      print(color.BOLD + RU.university_7)
+      sleep(1.5)
+      print(color.BOLD + RU.university_8)
+      ans3 = int(input(color.BOLD + RU.university_9))
+      if ans3 == 1:
+         print(color.BOLD + RU.university_10)
+         sleep(1.5)
+         print(color.BOLD + RU.university_11)
+         sleep(1.5)
+         print(color.BOLD + RU.university_12)
+         sleep(1.5)
+         print(color.BOLD + RU.university_13)
+      elif ans3 == 2:
+         print(color.BOLD + RU.university_12)
+         sleep(1.5)
+         print(color.BOLD + RU.university_13)
+   elif ans2 == 2:
+      print(color.BOLD + RU.university_10)
+      sleep(1.5)
+      print(color.BOLD + RU.university_11)
+      ans3 = int(input(color.BOLD + RU.university_9))
+      if ans3 == 1:
+         print(color.BOLD + RU.university_7)
+         sleep(1.5)
+         print(color.BOLD + RU.university_8)
+         sleep(1.5)
+         print(color.BOLD + RU.university_12)
+         sleep(1.5)
+         print(color.BOLD + RU.university_13)
+      elif ans3 == 2:
+         print(color.BOLD + RU.university_12)
+         sleep(1.5)
+         print(color.BOLD + RU.university_13)
 
+   print((color.BOLD + RU.university_14))
 
+   if ans1 == 2:
+      print(color.BOLD + RU.university_15)
+   elif ans1 == 1:
+      print(color.BOLD + RU.university_16)
+      sleep(1.5)
+      print(color.BOLD + RU.university_17)
+      sleep(1.5)
+      print(color.BOLD + RU.university_18)
+      sleep(1.5)
+      print(color.BOLD + RU.university_19)
+      sleep(1.5)
+      print(color.BOLD + RU.university_20)
+      sleep(1.5)
+      print(color.BOLD + RU.university_21)
+      sleep(1.5)
+      print(color.BOLD + RU.university_22)
+      sleep(1.5)
+      print(color.BOLD + RU.university_23)
+      sleep(1.5)
+      print(color.BOLD + RU.university_24)
+      sleep(1.5)
+      print(color.BOLD + RU.university_25)
+      sleep(1.5)
+      score += 10
 
 
 print(color.BOLD + RU.phrase_1)
