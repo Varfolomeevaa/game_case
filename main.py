@@ -133,6 +133,68 @@ def pharmacy():
     if flag == 1:
         score += 10
 
+def cinema():
+    print(color.BOLD + RU.cinema_1)
+    sleep(1)
+    print(color.BOLD + RU.cinema_2)
+    sleep(1.5)
+    print(color.BOLD + RU.cinema_3)
+    sleep(1.5)
+    print(color.BOLD + RU.cinema_4)
+    ans1 = int(input(RU.cinema_4_1))
+
+    if ans1 == 1:
+        print(color.BOLD + RU.cinema_5)
+        sleep(1.5)
+        print(color.BOLD + RU.cinema_6)
+        sleep(1.5)
+        print(color.BOLD + RU.cinema_6_1)
+        sleep(1)
+        print(color.BOLD + RU.cinema_7)
+        ans2 = int(input(color.BOLD + RU.cinema_8))
+        if ans2 == 1:
+            print(color.BOLD + RU.cinema_9)
+            a = r.randint(0, 1)
+            if a == 1:
+                print(color.BOLD + RU.cinema_14)
+                sleep(1)
+                print(color.BOLD + RU.cinema_15)
+                sleep(1)
+                print(color.BOLD + RU.cinema_12)
+                sleep(1)
+                print(color.BOLD + RU.cinema_13)
+                score += 10
+            elif a == 0:
+                print(color.BOLD + RU.cinema_16)
+                sleep(1.5)
+                print(color.BOLD + RU.cinema_17)
+                sleep(1.5)
+                print(color.BOLD + RU.cinema_18)
+        elif ans2 == 2:
+            print(color.BOLD + RU.cinema_12)
+            sleep(1)
+            print(color.BOLD + RU.cinema_13)
+    elif ans1 == 2:
+        print(color.BOLD + RU.cinema_9)
+        a = r.randint(0, 1)
+        if a == 1:
+            print(color.BOLD + RU.cinema_14)
+            sleep(1)
+            print(color.BOLD + RU.cinema_15)
+            sleep(1)
+            print(color.BOLD + RU.cinema_12)
+            sleep(1)
+            print(color.BOLD + RU.cinema_13)
+            score += 10
+        elif a == 0:
+            print(color.BOLD + RU.cinema_16)
+            sleep(1.5)
+            print(color.BOLD + RU.cinema_17)
+            sleep(1.5)
+            print(color.BOLD + RU.cinema_18)
+
+    print(color.BOLD + RU.cinema_19)
+
 def university():
    global score
    print(color.BOLD + RU.university_1)
@@ -207,7 +269,6 @@ def university():
       print(color.BOLD + RU.university_25)
       sleep(1.5)
       score += 10
-
 
 print(color.BOLD + RU.phrase_1)
 sleep(1)
