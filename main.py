@@ -206,7 +206,21 @@ def evid():
         print(color.BOLD + RU.evid_4)
 
 def examination():
-
+    print(color.BOLD + RU.examination_1)
+    sleep(2)
+    print(color.BOLD + RU.examination_2)
+    sleep(2)
+    print(color.BOLD + RU.examination_3)
+    sleep(2)
+    print(color.BOLD + RU.examination_4)
+    sleep(2)
+    print(color.BOLD + RU.examination_5)
+    sleep(2)
+    print(color.BOLD + RU.examination_6)
+    ans = int(input(color.BOLD + RU.interrogation_20))
+    if ans == 1:
+        print(color.BOLD + RU.story)
+    print(color.BOLD + RU.conclusion)
 
 
 
