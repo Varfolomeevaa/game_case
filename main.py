@@ -44,24 +44,32 @@ def library():
         sleep(1)
         ans_2 = int(input(color.BOLD + RU.library_q_3))
         if ans_2 == 1:
-            flag = 1
             print(color.BOLD + RU.library_q_2[2:])
             sleep(1)
             print(color.BOLD + RU.library_a_2_1)
             sleep(1)
-            print(color.BOLD + RU.library_5)
-            sleep(1)
+            rand = random.randint(0,1)
+            if rand == 1:
+                print(color.BOLD + RU.library_random_1)
+                sleep(1)
+                print(color.BOLD + RU.library_random_2)
+                sleep(1)
+                print(color.BOLD + RU.library_random_3)
+                flag = 1
             print(color.BOLD + RU.library_a_2_2)
     else:
-        flag = 1
         print(color.BOLD + RU.library_q_2[2:])
         sleep(1)
         print(color.BOLD + RU.library_a_2_1)
-        sleep(1)
-        print(color.BOLD + RU.library_5)
-        sleep(1)
+        rand = random.randint(0, 1)
+        if rand == 1:
+            print(color.BOLD + RU.library_random_1)
+            sleep(1)
+            print(color.BOLD + RU.library_random_2)
+            sleep(1)
+            print(color.BOLD + RU.library_random_3)
+            flag = 1
         print(color.BOLD + RU.library_a_2_2)
-        sleep(1)
         ans_2 = int(input(color.BOLD + RU.library_q_3))
         if ans_2 == 1:
             print(color.BOLD + RU.library_q_1[2:])
@@ -72,9 +80,8 @@ def library():
     print(color.BOLD + RU.library_7)
     sleep(1)
     if flag == 1:
-        print(color.BOLD + RU.library_8)
         score += 10
-    print(color.BOLD + RU.library_9, score)
+
 
 def pharmacy():
     global score
