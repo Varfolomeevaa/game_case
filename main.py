@@ -42,8 +42,8 @@ def library():
         sleep(1)
         print(color.BOLD + RU.library_a_1)
         sleep(1)
-        ans_2 = input(color.BOLD + RU.library_q_3).lower()
-        if ans_2 == RU.library_yes:
+        ans_2 = int(input(color.BOLD + RU.library_q_3))
+        if ans_2 == 1:
             flag = 1
             print(color.BOLD + RU.library_q_2[2:])
             sleep(1)
@@ -62,8 +62,8 @@ def library():
         sleep(1)
         print(color.BOLD + RU.library_a_2_2)
         sleep(1)
-        ans_2 = input(color.BOLD + RU.library_q_3).lower()
-        if ans_2 == RU.library_yes:
+        ans_2 = int(input(color.BOLD + RU.library_q_3))
+        if ans_2 == 1:
             print(color.BOLD + RU.library_q_1[2:])
             sleep(1)
             print(color.BOLD + RU.library_a_1)
@@ -76,6 +76,58 @@ def library():
         score += 10
     print(color.BOLD + RU.library_9, score)
 
+def pharmacy():
+    global score
+    flag = 0
+    print(color.BOLD + RU.pharmacy_1)
+    sleep(2)
+    print(color.BOLD + RU.pharmacy_2)
+    sleep(2)
+    print(color.BOLD + RU.pharmacy_3)
+    sleep(2)
+    print(color.BOLD + RU.pharmacy_4)
+    sleep(2)
+    ans_1 = int(input(color.BOLD + RU.pharmacy_q_1_1))
+    if ans_1 == 1:
+        print(color.BOLD + RU.pharmacy_q_1)
+        sleep(2)
+        print(color.BOLD + RU.pharmacy_a_1)
+        sleep(2)
+        ans_2 = int(input(color.BOLD + RU.pharmacy_q_1_2))
+        if ans_2 == 1:
+            print(color.BOLD + RU.pharmacy_q_2)
+            sleep(2)
+            print(color.BOLD + RU.pharmacy_a_2)
+        elif ans_2 == 2:
+            flag = 1
+            print(color.BOLD + RU.pharmacy_q_2_1)
+            sleep(2)
+            print(color.BOLD + RU.pharmacy_q_2_2)
+            sleep(2)
+            print(color.BOLD + RU.pharmacy_a_3)
+    elif ans_1 == 2:
+        print(color.BOLD + RU.pharmacy_q_2)
+        sleep(2)
+        print(color.BOLD + RU.pharmacy_a_2)
+        ans_2 = int(input(color.BOLD + RU.pharmacy_q_3))
+        if ans_2 == 1:
+            print(color.BOLD + RU.pharmacy_q_1)
+            sleep(2)
+            print(color.BOLD + RU.pharmacy_a_1)
+            sleep(2)
+            ans_3 = int(input(color.BOLD + RU.pharmacy_q_4))
+            if ans_3 == 1:
+                flag = 1
+                print(color.BOLD + RU.pharmacy_q_2_1)
+                sleep(2)
+                print(color.BOLD + RU.pharmacy_q_2_2)
+                sleep(2)
+                print(color.BOLD + RU.pharmacy_a_3)
+    print(color.BOLD + RU.pharmacy_5)
+    sleep(2)
+    print(color.BOLD + RU.pharmacy_6)
+    if flag == 1:
+        score += 10
 
 def university():
    global score
