@@ -9,6 +9,7 @@ import random
 
 score = 0
 evidence = []
+flag_1 = 0
 
 class color:
    PURPLE = '\033[95m'
@@ -225,7 +226,8 @@ def examination():
 
 
 def cinema():
-
+    global score
+    global flag_1
     print(color.BOLD + RU.cinema_1)
     sleep(1)
     print(color.BOLD + RU.cinema_2)
@@ -246,7 +248,7 @@ def cinema():
         ans2 = int(input(color.BOLD + RU.cinema_8))
         if ans2 == 1:
             print(color.BOLD + RU.cinema_9)
-            a = r.randint(0, 1)
+            a = random.randint(0, 1)
             if a == 1:
                 print(color.BOLD + RU.cinema_14)
                 sleep(1)
@@ -256,6 +258,8 @@ def cinema():
                 sleep(1)
                 print(color.BOLD + RU.cinema_13)
                 score += 10
+                flag_1 += 1
+                evidence.append(RU.camera)
             elif a == 0:
                 print(color.BOLD + RU.cinema_16)
                 sleep(1.5)
@@ -268,7 +272,7 @@ def cinema():
             print(color.BOLD + RU.cinema_13)
     elif ans1 == 2:
         print(color.BOLD + RU.cinema_9)
-        a = r.randint(0, 1)
+        a = random.randint(0, 1)
         if a == 1:
             print(color.BOLD + RU.cinema_14)
             sleep(1)
@@ -278,6 +282,7 @@ def cinema():
             sleep(1)
             print(color.BOLD + RU.cinema_13)
             score += 10
+            flag_1 += 1
         elif a == 0:
             print(color.BOLD + RU.cinema_16)
             sleep(1.5)
@@ -360,8 +365,11 @@ def university():
       sleep(1.5)
       print(color.BOLD + RU.university_25)
       sleep(1.5)
+      evidence.append(RU.cap)
       score += 10
 def start():
+    print(color.BOLD + RU.rules)
+    sleep(3)
     print(color.BOLD + RU.phrase_1)
     sleep(1)
     print(color.BOLD + RU.phrase_2)
