@@ -172,6 +172,7 @@ def talk():
    print(color.BOLD + RU.talk_6)
 
 def cinema():
+
     print(color.BOLD + RU.cinema_1)
     sleep(1)
     print(color.BOLD + RU.cinema_2)
