@@ -31,20 +31,17 @@ def library():
     print(color.BOLD + RU.library_3)
     sleep(1)
     print(color.BOLD + RU.library_4)
-    sleep(1)
-    print(color.BOLD + RU.library_q_1)
-    sleep(1)
-    print(color.BOLD + RU.library_q_2)
+    print('')
     sleep(1)
     ans_1 = int(input(color.BOLD + RU.library_q))
     if ans_1 == 1:
-        print(color.BOLD + RU.library_q_1[2:])
+        print(color.BOLD + RU.library_q_1)
         sleep(1)
         print(color.BOLD + RU.library_a_1)
         sleep(1)
         ans_2 = int(input(color.BOLD + RU.library_q_3))
         if ans_2 == 1:
-            print(color.BOLD + RU.library_q_2[2:])
+            print(color.BOLD + RU.library_q_2)
             sleep(1)
             print(color.BOLD + RU.library_a_2_1)
             sleep(1)
@@ -58,7 +55,7 @@ def library():
                 flag = 1
             print(color.BOLD + RU.library_a_2_2)
     else:
-        print(color.BOLD + RU.library_q_2[2:])
+        print(color.BOLD + RU.library_q_2)
         sleep(1)
         print(color.BOLD + RU.library_a_2_1)
         rand = random.randint(0, 1)
@@ -72,7 +69,7 @@ def library():
         print(color.BOLD + RU.library_a_2_2)
         ans_2 = int(input(color.BOLD + RU.library_q_3))
         if ans_2 == 1:
-            print(color.BOLD + RU.library_q_1[2:])
+            print(color.BOLD + RU.library_q_1)
             sleep(1)
             print(color.BOLD + RU.library_a_1)
     print(color.BOLD + RU.library_6)
