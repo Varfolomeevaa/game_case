@@ -8,6 +8,7 @@ import RU_LOCAL as RU
 import random
 
 score = 0
+evidence = []
 
 class color:
    PURPLE = '\033[95m'
@@ -91,6 +92,7 @@ def library():
     print(color.BOLD + RU.library_8)
     if flag == 1:
         score += 10
+        evidence.append(RU.library_9)
 
 
 def pharmacy():
@@ -154,6 +156,7 @@ def pharmacy():
    print(color.BOLD + RU.pharmacy_6)
    if flag == 1:
       score += 10
+      evidence.append(RU.pharmacy_8)
    print('')
    print(color.BOLD + RU.pharmacy_7)
 
