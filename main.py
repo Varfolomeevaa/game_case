@@ -421,6 +421,7 @@ def body():
     while count_places != 4:
         if 1 in places:
             pharmacy_0 = RU.cycle_4
+        print(color.BOLD + RU.cycle_0)
         print(color.BOLD + RU.cycle_1)
         print(color.BOLD + RU.cycle_2)
         print(color.BOLD + RU.cycle_3)
