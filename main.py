@@ -149,6 +149,7 @@ def talk():
     print(COLOR.BOLD + RU.talk_6)
     sleep(1)
 
+
 def call():
     global score
     print(COLOR.BOLD + RU.call_1)
