@@ -178,8 +178,10 @@ def evid():
     print(color.BOLD + RU.evid_2)
     if score >= 40 or RU.cap in evidence or RU.camera in evidence:
         print(color.BOLD + RU.evid_3)
+        examination()
     else:
         print(color.BOLD + RU.evid_4)
+        interrogation()
 
 def examination():
     print(color.BOLD + RU.examination_1)
@@ -409,36 +411,43 @@ def interrogation():
             print(color.BOLD + RU.story)
     print(color.BOLD + RU.conclusion)
 
+def body():
+    start()
 
-k = 0
-b = []
-print(k)
-c = ''
-while k != 4:
-    if 'сходить в библиотеку' in b:
-        c = '4. Сходить в аптеку.'
-    print('''Вы можете…
-1. Сходить в библиотеку.
-2. Сходить в кинотеатр.
-3. Сходить в университет.''')
-    print(c)
-    a = input('Ваш выбор:')
-    if a in b:
-        print('Вы там уже были! Выберете другую локацию')
-    else:
-        if a == 'сходить в библиотеку':
-            k += 1
-            b.append(a)
-            print('да1')
-        elif a == 'сходить в кинотеатр':
-            k += 1
-            b.append(a)
-            print('да2')
-        elif a == 'сходить в университет':
-            k += 1
-            b.append(a)
-            print('да3')
-        elif a == 'сходить в аптеку':
-            k += 1
-            b.append(a)
-            print('да4')
+    count_places = 0
+    places = []
+    pharmacy_0 = ''
+    while count_places != 4:
+        if 1 in places:
+            pharmacy_0 = RU.cycle_4
+        print(color.BOLD + RU.cycle_1)
+        print(color.BOLD + RU.cycle_2)
+        print(color.BOLD + RU.cycle_3)
+        print(color.BOLD + pharmacy_0)
+        ans = int(input(RU.cycle_5))
+        if ans in places:
+            print(color.BOLD + RU.cycle_6)
+        else:
+            if ans == 1:
+                library()
+                count_places += 1
+                places.append(ans)
+            elif ans == 2:
+                cinema()
+                count_places += 1
+                places.append(ans)
+            elif ans == 3:
+                university()
+                count_places += 1
+                places.append(ans)
+            elif ans == 4:
+                pharmacy()
+                count_places += 1
+                places.append(ans)
+
+    talk()
+    call()
+    letter()
+    evid()
+
+body()
