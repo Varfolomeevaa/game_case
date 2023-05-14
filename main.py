@@ -53,6 +53,7 @@ def library():
     sleep(1.5)
     print('')
     print(COLOR.BOLD + RU.library_8)
+    sleep(2)
     score += 20
     evidence.append(RU.library_11)
     evidence.append(RU.library_9)
@@ -130,6 +131,7 @@ def pharmacy():
         evidence.append(RU.pharmacy_8)
     print('')
     print(COLOR.BOLD + RU.pharmacy_7)
+    sleep(1)
 
 
 def talk():
@@ -145,7 +147,7 @@ def talk():
     print(COLOR.BOLD + RU.talk_5)
     sleep(2.1)
     print(COLOR.BOLD + RU.talk_6)
-
+    sleep(1)
 
 def call():
     global score
@@ -167,6 +169,7 @@ def call():
     print(COLOR.BOLD + RU.call_8)
     sleep(2.3)
     print(COLOR.BOLD + RU.call_9)
+    sleep(1)
     score += 10
     evidence.append(RU.call_10)
 
@@ -181,6 +184,7 @@ def letter():
         print(COLOR.BOLD + RU.letter_2)
         score += 5
         evidence.append(RU.letter_3)
+        sleep(3)
 
 
 def evid():
@@ -216,6 +220,7 @@ def examination():
     if ans == 1:
         print(COLOR.BOLD + RU.story)
     print(COLOR.BOLD + RU.conclusion)
+    sleep(1.5)
 
 
 def cinema():
