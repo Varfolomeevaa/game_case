@@ -4,8 +4,6 @@ Varfolomeeva Viktoria
 Sineokaya Anastasia
 """
 from time import sleep
-
-import RU_LOCAL
 import RU_LOCAL as RU
 import random
 
