@@ -139,26 +139,27 @@ def talk():
 
 
 def call():
-   print(color.BOLD + RU.call_1)
-   print('')
-   sleep(2)
-   print(color.BOLD + RU.call_2)
-   sleep(2)
-   print(color.BOLD + RU.call_3)
-   sleep(2)
-   print(color.BOLD + RU.call_4)
-   sleep(2)
-   print(color.BOLD + RU.call_5)
-   sleep(2)
-   print(color.BOLD + RU.call_6)
-   sleep(2)
-   print(color.BOLD + RU.call_7)
-   sleep(2)
-   print(color.BOLD + RU.call_8)
-   sleep(2)
-   print(color.BOLD + RU.call_9)
-   score += 10
-   evidence.append(RU.call_10)
+    global score
+    print(color.BOLD + RU.call_1)
+    print('')
+    sleep(2)
+    print(color.BOLD + RU.call_2)
+    sleep(2)
+    print(color.BOLD + RU.call_3)
+    sleep(2)
+    print(color.BOLD + RU.call_4)
+    sleep(2)
+    print(color.BOLD + RU.call_5)
+    sleep(2)
+    print(color.BOLD + RU.call_6)
+    sleep(2)
+    print(color.BOLD + RU.call_7)
+    sleep(2)
+    print(color.BOLD + RU.call_8)
+    sleep(2)
+    print(color.BOLD + RU.call_9)
+    score += 10
+    evidence.append(RU.call_10)
 
 def letter():
     global score
