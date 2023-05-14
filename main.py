@@ -4,12 +4,15 @@ Varfolomeeva Viktoria
 Sineokaya Anastasia
 """
 from time import sleep
+
+import RU_LOCAL
 import RU_LOCAL as RU
 import random
 
 score = 0
 evidence = []
 flag_1 = 0
+flag_2 = 0
 
 class color:
    PURPLE = '\033[95m'
@@ -25,7 +28,6 @@ class color:
 
 def library():
     global score
-    flag = 0
     print(color.BOLD + RU.library_1)
     print('')
     sleep(1)
@@ -33,71 +35,39 @@ def library():
     sleep(1)
     print(color.BOLD + RU.library_3)
     sleep(1)
-    print('')
     print(color.BOLD + RU.library_4)
+    sleep(1)
+    print(color.BOLD + RU.library_q_2)
+    sleep(1)
+    print(color.BOLD + RU.library_a_2_1)
+    sleep(1)
+    print('')
+    print(color.BOLD + RU.library_10)
     print('')
     sleep(1)
-    ans_1 = int(input(color.BOLD + RU.library_q))
+    print(color.BOLD + RU.library_a_2_2)
+    sleep(1)
     print('')
-    if ans_1 == 1:
+    ans = int(input(color.BOLD + RU.library_q))
+    print('')
+    if ans == 1 :
         print(color.BOLD + RU.library_q_1)
         sleep(1)
         print(color.BOLD + RU.library_a_1)
-        sleep(1)
-        print('')
-        ans_2 = int(input(color.BOLD + RU.library_q_3))
-        print('')
-        if ans_2 == 1:
-            print(color.BOLD + RU.library_q_2)
-            sleep(1)
-            print(color.BOLD + RU.library_a_2_1)
-            sleep(1)
-            rand = random.randint(0,1)
-            if rand == 1:
-                print(color.BOLD + RU.library_random_1)
-                sleep(1)
-                print('')
-                print(color.BOLD + RU.library_random_2)
-                print('')
-                sleep(1)
-                print(color.BOLD + RU.library_random_3)
-                flag = 1
-            print(color.BOLD + RU.library_a_2_2)
-    else:
-        print(color.BOLD + RU.library_q_2)
-        sleep(1)
-        print(color.BOLD + RU.library_a_2_1)
-        rand = random.randint(0, 1)
-        if rand == 1:
-            print(color.BOLD + RU.library_random_1)
-            sleep(1)
-            print('')
-            print(color.BOLD + RU.library_random_2)
-            print('')
-            sleep(1)
-            print(color.BOLD + RU.library_random_3)
-            flag = 1
-        print(color.BOLD + RU.library_a_2_2)
-        print('')
-        ans_2 = int(input(color.BOLD + RU.library_q_3))
-        print('')
-        if ans_2 == 1:
-            print(color.BOLD + RU.library_q_1)
-            sleep(1)
-            print(color.BOLD + RU.library_a_1)
     print(color.BOLD + RU.library_6)
     sleep(1)
     print(color.BOLD + RU.library_7)
     sleep(1)
     print('')
     print(color.BOLD + RU.library_8)
-    if flag == 1:
-        score += 10
-        evidence.append(RU.library_9)
+    score += 20
+    evidence.append(RU.library_11)
+    evidence.append(RU.library_9)
 
 
 def pharmacy():
    global score
+   global flag_2
    flag = 0
    print(color.BOLD + RU.pharmacy_1)
    print('')
@@ -125,6 +95,7 @@ def pharmacy():
          print(color.BOLD + RU.pharmacy_a_2)
       elif ans_2 == 2:
          flag = 1
+         flag_2 = 1
          print(color.BOLD + RU.pharmacy_q_2_1)
          sleep(2)
          print(color.BOLD + RU.pharmacy_q_2_2)
@@ -147,6 +118,7 @@ def pharmacy():
          print('')
          if ans_3 == 1:
             flag = 1
+            flag_2 = 1
             print(color.BOLD + RU.pharmacy_q_2_1)
             sleep(2)
             print(color.BOLD + RU.pharmacy_q_2_2)
@@ -175,6 +147,7 @@ def talk():
    sleep(2)
    print(color.BOLD + RU.talk_6)
 
+
 def call():
    print(color.BOLD + RU.call_1)
    print('')
@@ -195,6 +168,13 @@ def call():
    sleep(2)
    print(color.BOLD + RU.call_9)
 
+def letter():
+    global flag_2
+    if flag_2 == 0:
+        print(color.BOLD + RU.letter_1)
+        sleep(1)
+        print('')
+        print(color.BOLD + RU.letter_2)
 def evid():
     global score
     print(color.BOLD + RU.evid_1)
