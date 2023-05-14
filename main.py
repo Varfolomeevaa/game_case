@@ -215,25 +215,26 @@ def cinema():
     global score
     global flag_1
     print(color.BOLD + RU.cinema_1)
-    sleep(1.2)
+    sleep(3.5)
     print(color.BOLD + RU.cinema_2)
-    sleep(1.2)
+    sleep(3.5)
     print(color.BOLD + RU.cinema_3)
-    sleep(1.2)
+    sleep(7)
     print(color.BOLD + RU.cinema_4)
     ans1 = int(input(RU.cinema_4_1))
 
     if ans1 == 1:
         print(color.BOLD + RU.cinema_5)
-        sleep(1)
+        sleep(4.3)
         print(color.BOLD + RU.cinema_6)
-        sleep(2)
+        sleep(12)
         print(color.BOLD + RU.cinema_6_1)
-        sleep(1.2)
+        sleep(7.8)
         print(color.BOLD + RU.cinema_7)
         ans2 = int(input(color.BOLD + RU.cinema_8))
         if ans2 == 1:
             print(color.BOLD + RU.cinema_9)
+            sleep(3)
             a = random.randint(0, 1)
             if a == 1:
                 print(color.BOLD + RU.cinema_14)
@@ -243,41 +244,87 @@ def cinema():
                 print(color.BOLD + RU.cinema_12)
                 sleep(1)
                 print(color.BOLD + RU.cinema_13)
+                sleep(2)
                 score += 10
                 flag_1 += 1
                 evidence.append(RU.camera)
+                print(color.BOLD + RU.cinema_19)
+                sleep(1)
             elif a == 0:
                 print(color.BOLD + RU.cinema_16)
                 sleep(1.2)
                 print(color.BOLD + RU.cinema_17)
                 sleep(1)
                 print(color.BOLD + RU.cinema_18)
+                sleep(2)
+                print(color.BOLD + RU.cinema_19)
+                sleep(1)
         elif ans2 == 2:
             print(color.BOLD + RU.cinema_12)
             sleep(1)
             print(color.BOLD + RU.cinema_13)
+            sleep(1)
+            print(color.BOLD + RU.cinema_19)
+            sleep(1)
     elif ans1 == 2:
         print(color.BOLD + RU.cinema_9)
+        sleep(3)
         a = random.randint(0, 1)
         if a == 1:
             print(color.BOLD + RU.cinema_14)
-            sleep(1)
+            sleep(2)
             print(color.BOLD + RU.cinema_15)
-            sleep(1)
-            print(color.BOLD + RU.cinema_12)
-            sleep(1)
-            print(color.BOLD + RU.cinema_13)
+            sleep(3)
             score += 10
             flag_1 += 1
+            evidence.append(RU.camera)
+            print(color.BOLD + RU.cinema_7)
+            b = int(input(color.BOLD + RU.cinema_8))
+            if b == 1:
+                print(color.BOLD + RU.cinema_5)
+                sleep(4.3)
+                print(color.BOLD + RU.cinema_6)
+                sleep(12)
+                print(color.BOLD + RU.cinema_6_1)
+                sleep(7.8)
+                print(color.BOLD + RU.cinema_12)
+                sleep(3)
+                print(color.BOLD + RU.cinema_13)
+                sleep(2)
+                print(color.BOLD + RU.cinema_19)
+                sleep(1)
+            else:
+                print(color.BOLD + RU.cinema_12)
+                sleep(3)
+                print(color.BOLD + RU.cinema_13)
+                sleep(2)
+                print(color.BOLD + RU.cinema_19)
+                sleep(1)
         elif a == 0:
             print(color.BOLD + RU.cinema_16)
-            sleep(1.2)
-            print(color.BOLD + RU.cinema_17)
-            sleep(1)
-            print(color.BOLD + RU.cinema_18)
-
-    print(color.BOLD + RU.cinema_19)
-    sleep(1)
+            sleep(6)
+            print(color.BOLD + RU.cinema_7)
+            b = int(input(color.BOLD + RU.cinema_8))
+            if b == 1:
+                print(color.BOLD + RU.cinema_5)
+                sleep(4.3)
+                print(color.BOLD + RU.cinema_6)
+                sleep(12)
+                print(color.BOLD + RU.cinema_6_1)
+                sleep(7.8)
+                print(color.BOLD + RU.cinema_12)
+                sleep(3)
+                print(color.BOLD + RU.cinema_13)
+                sleep(2)
+                print(color.BOLD + RU.cinema_19)
+                sleep(1)
+            else:
+                print(color.BOLD + RU.cinema_17)
+                sleep(3)
+                print(color.BOLD + RU.cinema_18)
+                sleep(2)
+                print(color.BOLD + RU.cinema_19)
+                sleep(1)
 
 def university():
     global score
@@ -356,23 +403,23 @@ def university():
         score += 10
 def start():
     print(color.BOLD + RU.rules)
-    sleep(5)
+    sleep(26)
     print(color.BOLD + RU.phrase_1)
-    sleep(2.5)
+    sleep(11)
     print(color.BOLD + RU.phrase_2)
     sleep(1)
     print(color.BOLD + RU.phrase_3)
-    sleep(1.7)
+    sleep(11)
     print(color.BOLD + RU.phrase_4)
-    sleep(1)
+    sleep(3)
     print(color.BOLD + RU.phrase_5)
-    sleep(1)
+    sleep(6)
     print(color.BOLD + RU.phrase_6)
-    sleep(5)
+    sleep(20)
     print(color.BOLD + RU.phrase_7)
-    sleep(5)
+    sleep(20)
     print(color.BOLD + RU.phrase_8)
-    sleep(5)
+    sleep(20)
 
 def interrogation():
     print(color.BOLD + RU.interrogation_1)
@@ -462,3 +509,5 @@ def body():
     evid()
 
 body()
+
+
