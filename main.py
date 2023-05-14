@@ -286,7 +286,7 @@ def cinema():
             print(COLOR.BOLD + RU.cinema_14)
             sleep(2)
             print(COLOR.BOLD + RU.cinema_15)
-            sleep(3)
+            sleep(2.9)
             score += 10
             flag_1 += 1
             evidence.append(RU.camera)
