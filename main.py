@@ -167,21 +167,26 @@ def call():
    print(color.BOLD + RU.call_8)
    sleep(2)
    print(color.BOLD + RU.call_9)
+   score += 10
+   evidence.append(RU.call_10)
 
 def letter():
+    global score
     global flag_2
     if flag_2 == 0:
         print(color.BOLD + RU.letter_1)
         sleep(1)
         print('')
         print(color.BOLD + RU.letter_2)
+        score += 5
+        evidence.append(RU.letter_3)
 def evid():
     global score
     print(color.BOLD + RU.evid_1)
     print(*evidence, sep = ';')
     sleep(2)
     print(color.BOLD + RU.evid_2)
-    if score > ???:
+    if score >= 40 or RU.cap in evidence or RU.camera in evidence:
         print(color.BOLD + RU.evid_3)
     else:
         print(color.BOLD + RU.evid_4)
