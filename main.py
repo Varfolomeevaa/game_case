@@ -256,7 +256,7 @@ def cinema():
                 flag_1 += 1
                 evidence.append(RU.camera)
                 print(COLOR.BOLD + RU.cinema_19)
-                sleep(1)
+                sleep(3)
             elif a == 0:
                 print(COLOR.BOLD + RU.cinema_16)
                 sleep(1.2)
@@ -265,14 +265,14 @@ def cinema():
                 print(COLOR.BOLD + RU.cinema_18)
                 sleep(2)
                 print(COLOR.BOLD + RU.cinema_19)
-                sleep(1)
+                sleep(3)
         elif ans2 == 2:
             print(COLOR.BOLD + RU.cinema_12)
             sleep(1)
             print(COLOR.BOLD + RU.cinema_13)
             sleep(1)
             print(COLOR.BOLD + RU.cinema_19)
-            sleep(1)
+            sleep(3)
     elif ans1 == 2:
         print(COLOR.BOLD + RU.cinema_9)
         sleep(3)
@@ -299,14 +299,14 @@ def cinema():
                 print(COLOR.BOLD + RU.cinema_13)
                 sleep(2)
                 print(COLOR.BOLD + RU.cinema_19)
-                sleep(1)
+                sleep(3)
             else:
                 print(COLOR.BOLD + RU.cinema_12)
                 sleep(3)
                 print(COLOR.BOLD + RU.cinema_13)
                 sleep(2)
                 print(COLOR.BOLD + RU.cinema_19)
-                sleep(1)
+                sleep(3)
         elif a == 0:
             print(COLOR.BOLD + RU.cinema_16)
             sleep(6)
@@ -324,14 +324,14 @@ def cinema():
                 print(COLOR.BOLD + RU.cinema_13)
                 sleep(2)
                 print(COLOR.BOLD + RU.cinema_19)
-                sleep(1)
+                sleep(3)
             else:
                 print(COLOR.BOLD + RU.cinema_17)
                 sleep(3)
                 print(COLOR.BOLD + RU.cinema_18)
                 sleep(2)
                 print(COLOR.BOLD + RU.cinema_19)
-                sleep(1)
+                sleep(3)
 
 
 def university():
@@ -384,7 +384,7 @@ def university():
             print(COLOR.BOLD + RU.university_13)
 
     print((COLOR.BOLD + RU.university_14))
-    sleep(2)
+    sleep(3)
 
     if ans1 == 2:
         print(COLOR.BOLD + RU.university_15)
