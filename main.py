@@ -415,23 +415,23 @@ def university():
 
 
 def start():
-    print(color.BOLD + RU.rules)
+    print(COLOR.BOLD + RU.rules)
     sleep(26)
-    print(color.BOLD + RU.phrase_1)
+    print(COLOR.BOLD + RU.phrase_1)
     sleep(11)
-    print(color.BOLD + RU.phrase_2)
+    print(COLOR.BOLD + RU.phrase_2)
     sleep(1)
-    print(color.BOLD + RU.phrase_3)
+    print(COLOR.BOLD + RU.phrase_3)
     sleep(11)
-    print(color.BOLD + RU.phrase_4)
+    print(COLOR.BOLD + RU.phrase_4)
     sleep(3)
-    print(color.BOLD + RU.phrase_5)
+    print(COLOR.BOLD + RU.phrase_5)
     sleep(6)
-    print(color.BOLD + RU.phrase_6)
+    print(COLOR.BOLD + RU.phrase_6)
     sleep(20)
-    print(color.BOLD + RU.phrase_7)
+    print(COLOR.BOLD + RU.phrase_7)
     sleep(20)
-    print(color.BOLD + RU.phrase_8)
+    print(COLOR.BOLD + RU.phrase_8)
     sleep(20)
 
 
