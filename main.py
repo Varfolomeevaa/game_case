@@ -16,6 +16,7 @@ class color:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
+
 def library():
     global score
     print(color.BOLD + RU.library_1)
@@ -40,7 +41,7 @@ def library():
     print('')
     ans = int(input(color.BOLD + RU.library_q))
     print('')
-    if ans == 1 :
+    if ans == 1:
         print(color.BOLD + RU.library_q_1)
         sleep(2.5)
         print(color.BOLD + RU.library_a_1)
@@ -129,6 +130,7 @@ def pharmacy():
     print('')
     print(color.BOLD + RU.pharmacy_7)
 
+
 def talk():
     print(color.BOLD + RU.talk_1)
     sleep(1.2)
@@ -142,6 +144,7 @@ def talk():
     print(color.BOLD + RU.talk_5)
     sleep(2.1)
     print(color.BOLD + RU.talk_6)
+
 
 def call():
     global score
@@ -166,6 +169,7 @@ def call():
     score += 10
     evidence.append(RU.call_10)
 
+
 def letter():
     global score
     global flag_2
@@ -176,10 +180,12 @@ def letter():
         print(color.BOLD + RU.letter_2)
         score += 5
         evidence.append(RU.letter_3)
+
+
 def evid():
     global score
     print(color.BOLD + RU.evid_1)
-    print(*evidence, sep = ';')
+    print(*evidence, sep=';')
     sleep(3)
     print(color.BOLD + RU.evid_2)
     if score >= 40 or RU.cap in evidence or RU.camera in evidence:
@@ -190,6 +196,7 @@ def evid():
         print(color.BOLD + RU.evid_4)
         sleep(3)
         interrogation()
+
 
 def examination():
     print(color.BOLD + RU.examination_1)
@@ -471,6 +478,7 @@ def interrogation():
             print(color.BOLD + RU.story)
     print(color.BOLD + RU.conclusion)
 
+
 def body():
     start()
 
@@ -511,6 +519,5 @@ def body():
     letter()
     evid()
 
+
 body()
-
-
