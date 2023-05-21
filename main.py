@@ -1,6 +1,6 @@
 """
 Group:
-Varfolomeeva Viktoria
+Varfolomeeva Viktoria 60
 Sineokaya Anastasia
 """
 from time import sleep
