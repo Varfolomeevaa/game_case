@@ -192,7 +192,7 @@ def evid():
     global score
     print(COLOR.BOLD + RU.evid_1)
     print(*evidence, sep=';')
-    sleep(3)
+    sleep(13)
     print(COLOR.BOLD + RU.evid_2)
     if score >= 40 or RU.cap in evidence or RU.camera in evidence:
         print(COLOR.BOLD + RU.evid_3)
